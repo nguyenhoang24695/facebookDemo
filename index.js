@@ -37,5 +37,5 @@ app.get('/webhook', (req, res) => {
     }
 })
 // 
-let hostPort = process.env.Port || 3000;
-app.listen(process.env.Port || 3000, () => (console.log('listening in port ' + hostPort))    );
+let hostPort = process.env.PORT || 3000;
+app.listen(hostPort, () => (console.log('listening in port ' + hostPort))    );
